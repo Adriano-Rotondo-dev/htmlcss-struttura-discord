@@ -6,23 +6,39 @@
 }
 
 :root {
-    bg-color-head:blue;
-    bg-color-nav: cyan;
-    bg-color-nav-bar: gold;
-    bg-color-main-odd: white;
-    bg-color-main-even:rgb(192, 192, 192);
-    box-color-head:rgb(222, 148, 236);
-    box-color-main-big: rgb(240, 249, 255);
-    box-color-main-small: pink;
-    box-color-main-bigger: green;
-    bg-color-footer: rgb(87, 86, 86);
-    box-color-footer-big: rgb(241, 133, 151);
-    box-color-footer-small: rgb(29, 143, 109);
-    bg-color-footer-box: rgb(14, 180, 97);
-    btn-color-footer: pink;
+    --bg-color-head:blue;
+    --bg-color-nav: cyan;
+    --bg-color-bar: gold;
+    --bg-color-main-odd: white;
+    --bg-color-main-even:rgb(192, 192, 192);
+    --box-color-head:rgb(222, 148, 236);
+    --box-color-main-big: rgb(240, 249, 255);
+    --box-color-main-small: pink;
+    --box-color-main-bigger: green;
+    --bg-color-footer: rgb(87, 86, 86);
+    --box-color-footer-big: rgb(241, 133, 151);
+    --box-color-footer-small: rgb(29, 143, 109);
+    --bg-color-footer-box: rgb(14, 180, 97);
+    --btn-color-footer: pink;
 }
 
-
 body {
-    display: flex;
+    
+}
+
+.debug {
+    #site-header {
+        background-color: var(--bg-color-head);
+       min-height: 30%;
+       display: flex;
+    }
+    .nav {
+        background-color: var(--bg-color-nav);
+        min-height: 10%;
+    }
+    .bar {
+        background-color: var(--bg-color-bar);
+        min-height: 5%;
+    }
+
 }
