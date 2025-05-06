@@ -23,22 +23,30 @@
 }
 
 body {
+    display: flex;
     
 }
 
 .debug {
     #site-header {
-        background-color: var(--bg-color-head);
-       min-height: 30%;
-       display: flex;
-    }
+        display: inline;
+       background-color: var(--bg-color-head);
+       min-height: 70px;
+            
     .nav {
         background-color: var(--bg-color-nav);
-        min-height: 10%;
+        min-height: 40px;
+        justify-content: center;
     }
     .bar {
         background-color: var(--bg-color-bar);
-        min-height: 5%;
+        min-height: 10px;
+        
     }
+    .jumbo {
+        background-color: var(--bg-color-head);
+    }
+    .box-head {
 
+    }
 }
