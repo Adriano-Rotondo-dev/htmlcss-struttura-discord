@@ -2,16 +2,16 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    
 }
 
 :root {
-    --bg-color-head:blue;
-    --bg-color-nav: cyan;
+    --bg-color-jumbo:blue;
+    --bg-color-nav: rgb(154, 194, 194);
     --bg-color-bar: gold;
     --bg-color-main-odd: white;
     --bg-color-main-even:rgb(192, 192, 192);
-    --box-color-head:rgb(222, 148, 236);
+    --box-color-jumbo:rgb(222, 148, 236);
     --box-color-main-big: rgb(240, 249, 255);
     --box-color-main-small: pink;
     --box-color-main-bigger: green;
@@ -22,31 +22,49 @@
     --btn-color-footer: pink;
 }
 
-body {
-    display: flex;
-    
+.container{
+    max-width: 1200px;
+    margin:0 auto;
 }
+.border {
+border: 1px dashed black;
+}
+/*Header*/
 
-.debug {
-    #site-header {
-        display: inline;
-       background-color: var(--bg-color-head);
-       min-height: 70px;
-            
-    .nav {
-        background-color: var(--bg-color-nav);
-        min-height: 40px;
-        justify-content: center;
-    }
-    .bar {
-        background-color: var(--bg-color-bar);
-        min-height: 10px;
-        
-    }
-    .jumbo {
-        background-color: var(--bg-color-head);
-    }
-    .box-head {
+#site-header{
+    width: 1500px;
+    background-color: var(--bg-color-nav);
+}
+.navbar{
+min-height: 10px;    
+display: flex;
+align-items: center;
+justify-content: space-between;
 
+}
+.navbar>* {
+    background-color: var(--bg-color-bar);
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px dashed black;
+}
+.navbar-link {
+    text-align: center;
+}
+.navbar-login {
+    text-align: end;
+}
+.jumbotron {
+    background-color: var(--bg-color-jumbo);
+    height: 300px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    .jumbotron-content {
+        background-color: var(--box-color-jumbo);
+        width: 50%;
     }
+    
 }
