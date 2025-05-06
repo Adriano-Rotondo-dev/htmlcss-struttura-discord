@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bg-color-jumbo:blue;
+    --bg-color-jumbo:rgb(4, 4, 148);
     --bg-color-nav: rgb(154, 194, 194);
     --bg-color-bar: gold;
     --bg-color-main-odd: white;
@@ -29,7 +29,7 @@
 .border {
 border: 1px dashed black;
 }
-/*Header*/
+/*Header-Navbar*/
 
 #site-header{
     width: 1500px;
@@ -56,6 +56,8 @@ justify-content: space-between;
 .navbar-login {
     text-align: end;
 }
+
+/*JUMBOTRON*/
 .jumbotron {
     background-color: var(--bg-color-jumbo);
     height: 300px;
@@ -66,5 +68,4 @@ justify-content: space-between;
         background-color: var(--box-color-jumbo);
         width: 50%;
     }
-    
 }
