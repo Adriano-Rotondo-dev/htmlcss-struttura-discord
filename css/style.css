@@ -18,7 +18,7 @@
     --bg-color-footer: rgb(87, 86, 86);
     --box-color-footer-big: rgb(241, 133, 151);
     --box-color-footer-small: rgb(29, 143, 109);
-    --bg-color-footer-box: rgb(14, 180, 97);
+    --bg-color-footer-box: aquamarine;
     --btn-color-footer: pink;
 }
 /*#endregion*/
@@ -33,7 +33,7 @@ border: 1px dashed black;
 /*#region Header-Navbar*/
 /*header*/
 #site-header{
-    width: 1500px;
+    max-width: 1500px;
     background-color: var(--bg-color-nav);
 }
 /*Navbar*/
@@ -95,11 +95,11 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
        
-    .big {
+    .small {
         background-color: var(--box-color-main-small);
         width: 25%;
     }
-    .small{
+    .big{
         background-color: var(--box-color-main-big);
         width: 40%;
     }
@@ -119,22 +119,39 @@ justify-content: space-between;
 /*#region Footer*/
 footer{
     background-color: var(--bg-color-footer);
-    height: 300px;
     padding: 60px;
+}
+.footer-top{
+    height: 400px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
     display: flex;
     justify-content: center;
-
-        .bigfoot {
-                background-color: var(--box-color-footer-big);
-                width: 100px;
-                height:100%;
-            }
-        .smallfoot{
-                background-color: var(--box-color-footer-small);
-                width: 50px;
-                height: 100%;
-                border: 1px dashed white;
-            }
+}
+.bigfoot{
+    background-color: var(--box-color-footer-big);
+    width: 15%;
+    height: 50%;
+}
+.smallfoot{
+    background-color: var(--box-color-footer-small);
+    width: 8%;
+    height: 50%;
+    border:1px dashed white;
+}
+    
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: var(--bg-color-footer-box);
+    padding:10px 0;
+}
+.footer-bottom>*{
+    padding: 10px 20px;
+    background-color: var(--btn-color-footer); 
     
 }
+
 /*#endregion#*/
